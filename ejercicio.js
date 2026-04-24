@@ -11,17 +11,25 @@ function ejercutar(numejercicio){
         listarNumerosReversa();
     }else if(numejercicio == 3){
         listarPares();
+    }else if(numejercicio == 4){
+        listarImpares();
     }
 }
 
 function listarNumerosReversa(){
-    for(let i=3 ; i>0; i--){
+    for(let i=3 ; i>=0; i--){
         console.log(i);  
     }
 }
 
 function listarPares(){
-    for(let i = 0; i<10; i+=2){
+    for(let i = 0; i<=10; i+=2){
+        console.log(i);
+    }
+}
+
+function listarImpares(){
+    for(let i=1 ; i<=7; i+=2){
         console.log(i);
     }
 }
