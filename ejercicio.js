@@ -4,15 +4,22 @@ function listarNumeros(){
     }
 }
 
-function ejercutar(numejercicio){
-    if(numejercicio == 1){
-        listarNumeros();
-    }else if(numejercicio == 2){
-        listarNumerosReversa();
-    }else if(numejercicio == 3){
-        listarPares();
-    }else if(numejercicio == 4){
-        listarImpares();
+function ejercutar(numejercicio) {
+    switch (numejercicio) {
+        case 1:
+            listarNumeros();
+            break;
+        case 2:
+            listarNumerosReversa();
+            break;
+        case 3:
+            listarPares();
+            break;
+        case 4:
+            listarImpares();
+            break;
+        default:
+            break;
     }
 }
 
